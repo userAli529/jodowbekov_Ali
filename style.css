@@ -1,0 +1,649 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebe9e9;
+}
+* {
+  font-family: Jost;
+  font-weight: 400;
+  font-style: normal;
+}
+video {
+  width: 60px;
+  border-radius: 100px;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #0a0a0a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+nav ul {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(197, 201, 205);
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav {
+  margin-top: 300px;
+  position: fixed;
+  z-index: 9999;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  right: 0;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.header_box1 {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+
+.header_box1 img {
+  width: 100%;
+
+  border: 1px solid var(--hover-color);
+  object-fit: cover;
+}
+
+/* Стили для заголовка h2 */
+
+/* Стили для заголовка h2 */
+.header_box1 h2 {
+  position: absolute;
+  color: #ffffff;
+  max-width: 80%;
+  font-size: 2rem;
+  line-height: 1.2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  background-color: #00000082;
+}
+
+/* Стили для параграфа p */
+.header_box1 p {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 350px;
+  background-color: #00000082;
+}
+.Ersence {
+  background: rgb(18, 18, 18);
+  margin-top: -30px;
+  display: flex;
+  padding: 0px 20px;
+  width: auto;
+  height: 30px auto;
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+.Ersence h1 {
+  color: rgb(199, 199, 199);
+  position: absolute;
+  margin-left: 550px;
+}
+.ErsenceText {
+  width: 550px;
+  height: 270px;
+  color: rgb(199, 199, 199);
+  margin-top: 70px;
+  margin-left: 120px;
+}
+h1 {
+  text-align: center;
+}
+.Ersence img {
+  width: 400px;
+  height: 270px;
+  margin-top: 100px;
+}
+/* Основные стили для продуктов */
+.product {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap; /* Добавлено для адаптивности */
+  margin: 20px;
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+
+.products {
+  margin-top: 40px;
+  width: 300px;
+  padding: 7px;
+  border: 2px solid var(--accent-color);
+  position: relative; /* Для корректного позиционирования span */
+  transition: box-shadow 0.3s ease; /* Плавный переход тени */
+}
+
+.products:hover {
+  box-shadow: 0 4px 15px rgba(114, 96, 14, 0.2);
+}
+
+.products h3 {
+  margin-top: -5px;
+  display: flex;
+  justify-content: center;
+}
+
+.products h1 {
+  margin-top: -90px;
+}
+
+.products h6 {
+  color: rgb(211, 63, 0);
+}
+button {
+  margin-left: 100px;
+  border: none;
+  width: 30px;
+  height: 37px;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}
+/* Стили для скидочного ярлыка */
+
+main h2 {
+  margin-left: 135px;
+}
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+  background: var(--bg-color);
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  animation: fadeInScale 1s ease-out;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 11px;
+}
+
+.stat-item {
+  text-align: center;
+  width: 150px;
+  height: 80px;
+  border-radius: 5px;
+  color: #000000;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-top: -10px;
+  margin: 10px;
+}
+.stat-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.brend {
+  color: #ffffff;
+  background: rgb(18, 18, 18);
+  margin-top: -30px;
+  padding: 0px 20px;
+  width: auto;
+  height: 30px auto;
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+/* Основные стили для контейнера */
+.nas {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+
+.nas h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Стили для контейнера с блоками */
+.nass {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Общие стили для каждого блока */
+.nas_box {
+  background-color: #000000e3;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.384);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 0, 0.555);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 358px;
+}
+
+.nas_box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nas_box h1 {
+  font-size: 1.5em;
+  color: #fcfafa;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  margin-left: -50px;
+  height: 56px;
+  background: rgb(18, 18, 18);
+  margin-top: -20px;
+}
+
+.nas_box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.nas_box p {
+  font-size: 1em;
+  color: #ffffff;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+}
+
+.nas_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.vaprosy {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+
+.vaprosy h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Стили для каждого вопроса */
+.vapros {
+  margin-bottom: 15px;
+}
+
+/* Стили для элемента details */
+details {
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+details:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для summary (заголовок вопроса) */
+summary {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #c9c5c5;
+  cursor: pointer;
+  padding: 10px;
+  list-style: none; /* Убираем стандартный маркер */
+  position: relative;
+}
+
+/* Кастомный маркер для summary */
+summary::before {
+  content: "▶";
+  position: absolute;
+  left: -20px;
+  color: #a7a1a1;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* Стили для текста внутри details */
+details p {
+  font-size: 1em;
+  color: #ffffff;
+  line-height: 1.5;
+  padding: 10px;
+  margin-top: 10px;
+}
+/* Основные стили для контейнера */
+.carta {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.carta h1 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Контейнер для карты и ссылок */
+.carts {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gender-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gender-card:hover {
+  transform: translateY(-10px);
+}
+
+.gender-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+}
+
+.card-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #ff652f;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  background: #ff4500;
+  box-shadow: 0 5px 15px rgba(255, 101, 47, 0.4);
+}
+
+/* Футер */
+.main-footer {
+  background: #252525;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 20px 0; /* Добавим отступы сверху и снизу */
+  border: 1px solid rgba(255, 255, 0, 0.555);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 20px; /* Добавим отступы по бокам */
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-contact ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links ul li a,
+.footer-contact ul li {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact ul li i {
+  margin-right: 10px;
+  color: #fff8f5;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  padding: 0 20px; /* Добавим отступы по бокам */
+}
+
+.footer-copyright .developer {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #747474;
+}
+
+.nav b img {
+  width: 30px;
+  margin-left: -70px;
+  margin-top: -35px;
+  position: absolute;
+}
+
+/* Адаптация для мобильных устройств */
+@media screen and (max-width: 768px) {
+  /* Навигация */
+  .nav {
+    margin-top: 650px;
+    margin-right: 5px;
+    transform: scale(0.8);
+  }
+
+  /* Изображение в header_box1 */
+  .header_box1 img {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Заголовок и текст в header_box1 */
+  .header_box1 h2 {
+    font-size: 1.2rem;
+    top: 25%;
+    max-width: 95%;
+  }
+
+  .header_box1 p {
+    font-size: 0.8rem;
+    top: 35%;
+    max-width: 95%;
+    margin-top: 60px;
+  }
+
+  /* Секция Ersence */
+  .Ersence {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+  .Ersence h1 {
+    margin-left: 110px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .ErsenceText {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Ersence img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 20px auto;
+    margin-top: 50px;
+  }
+  .product {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .products {
+    width: 90%;
+    margin-top: 20px;
+  }
+  button {
+    margin-left: 100px;
+  }
+  .carts iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr; /* Одна колонка на мобильных */
+    gap: 1rem; /* Уменьшаем промежуток между элементами */
+    margin-left: 0; /* Убираем отступ слева */
+    padding: 0 10px; /* Уменьшаем отступы по бокам */
+  }
+
+  .footer-links h3,
+  .footer-contact h3 {
+    font-size: 1.1rem; /* Уменьшаем размер заголовков */
+  }
+
+  .footer-links ul li a,
+  .footer-contact ul li {
+    font-size: 0.9rem; /* Уменьшаем размер текста */
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem; /* Уменьшаем размер текста копирайта */
+  }
+
+  .footer-copyright .developer {
+    font-size: 0.7rem; /* Уменьшаем размер текста разработчика */
+  }
+  .stat-item {
+    width: 145px;
+    height: 70px;
+  }
+  .vaprosy {
+    width: 300px;
+  }
+  .statistics {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
